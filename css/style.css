@@ -1,0 +1,110 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+input,
+button,
+select,
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* style */
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.image--footer {
+  position: relative;
+}
+
+.cta__wrap {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: min(10vw, 80px);
+  width: 100%;
+  left: 0;
+  bottom: min(60vw, 432px);
+}
+
+.cta {
+  width: min(15vw, 100px);
+  transition: 0.3s;
+}
+
+.cta:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
